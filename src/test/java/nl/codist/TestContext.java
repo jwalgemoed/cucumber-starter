@@ -1,18 +1,19 @@
 package nl.codist;
 
-import org.springframework.beans.BeansException;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * This is the test context - referenced from the GoogleSteps. Serenity picks up a reference to this
+ * context (by way of annotations):
+ *
+ * @ContextConfiguration(classes = TestContext.class)
+ * @TestPropertySource({"classpath:serenity.properties"})
+ *
+ * Serenity will intialize it so you can add beans to it (or use scanning as configured here). These beans can then
+ * be injected into the GoogleSteps class.
+ */
 @Configuration
 @ComponentScan(basePackages = {"nl.codist"})
-public class TestContext implements ApplicationContextAware {
-
-    public TestContext() {
-    }
-
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-    }
+public class TestContext {
 }

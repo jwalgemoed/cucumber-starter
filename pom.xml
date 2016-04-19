@@ -9,20 +9,12 @@
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
-        <!-- Serenity with Cucumber -->
         <dependency>
-            <!-- Includes info.cukes:cucumber-java:1.2.4 and info.cukes:cucumber-junit:1.2.4 -->
             <groupId>net.serenity-bdd</groupId>
             <artifactId>serenity-cucumber</artifactId>
             <version>1.1.1</version>
         </dependency>
         <dependency>
-            <!--
-            Use this for Cucumber + Serenity + Spring:
-            - Cucumber supports only one DI solution at a time
-            - Serenity is a DI solution (it can inject Serenity stuff)
-            - Serenity supports Spring via net.serenity-bdd:serenity-spring, so info.cukes:cucumber-spring is not needed.
-            -->
             <groupId>net.serenity-bdd</groupId>
             <artifactId>serenity-spring</artifactId>
             <version>1.1.17</version>
@@ -73,7 +65,6 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <!-- Please note: integration test failures do not fail the build, but they do show up in the reports. -->
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
