@@ -1,0 +1,20 @@
+# Maven #
+target
+
+# IDEA #
+.idea
+*.iml
+
+# MAC #
+.DS_Store
+
+**/*.ipr
+**/*.iws
+**/.classpath
+**/.project
+**/.settings/
+**/target/
+**/bin/
+**/build/
+**/out/
+results
