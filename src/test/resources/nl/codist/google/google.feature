@@ -1,4 +1,4 @@
-@google # this annotation can be used to run all tests in this feature
+@google
 Feature: A couple of test scenario's to demonstrate a Cucumber test
 
   As a user
@@ -19,7 +19,7 @@ Feature: A couple of test scenario's to demonstrate a Cucumber test
     When I google for "Something different"
     Then I expect it to not return results for "Bruce Willis"
 
-  @skip # This scenario will be skipped because it is annotated with @skip
+  @skip
   Scenario: This is not yet implemented
     When I want to google something
     Then I expect a certain number of results
