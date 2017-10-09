@@ -1,4 +1,4 @@
-package nl.codist.google;
+package nl.sourcelabs.google;
 
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;

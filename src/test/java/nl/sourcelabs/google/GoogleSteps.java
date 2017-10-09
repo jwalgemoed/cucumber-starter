@@ -1,6 +1,6 @@
-package nl.codist.google;
+package nl.sourcelabs.google;
 
-import nl.codist.TestContext;
+import nl.sourcelabs.TestContext;
 import org.fluentlenium.core.annotation.Page;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestPropertySource;

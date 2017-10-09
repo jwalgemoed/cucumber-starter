@@ -1,4 +1,4 @@
-package nl.codist;
+package nl.sourcelabs;
 
 import cucumber.api.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;

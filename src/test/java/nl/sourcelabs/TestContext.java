@@ -1,4 +1,4 @@
-package nl.codist;
+package nl.sourcelabs;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -14,6 +14,6 @@ import org.springframework.context.annotation.Configuration;
  * be injected into the GoogleSteps class.
  */
 @Configuration
-@ComponentScan(basePackages = {"nl.codist"})
+@ComponentScan(basePackages = { "nl.sourcelabs" })
 public class TestContext {
 }

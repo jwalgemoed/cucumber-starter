@@ -1,4 +1,4 @@
-package nl.codist.google;
+package nl.sourcelabs.google;
 
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
@@ -27,7 +27,7 @@ public class GooglePage extends PageObject {
     private WebElement queryBox;
 
     // Serenity can inject page elements by using these annotations. Based on xpath, id, class, name.
-    @FindBy(name = "btnG")
+    @FindBy(className = "lsb")
     private WebElement searchButton;
 
     // Method called after a page is opened (open() called on this page object) - use this space to confirm loading

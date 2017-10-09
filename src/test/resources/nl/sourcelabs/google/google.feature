@@ -12,8 +12,8 @@ Feature: A couple of test scenario's to demonstrate a Cucumber test
     Examples:
       | query   | result  |
       | toeten  | toeten  |
-      | bloazen | bloazen |
-      | melk    | melk    |
+      | blazen  | blazen  |
+      | melk    | melk1    |
 
   Scenario: Google a value and check if the result do not contain anything else
     When I google for "Something different"
